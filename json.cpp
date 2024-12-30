@@ -735,7 +735,6 @@ std::string json::parsing::encode_string(const char *input)
         {
         case '"':
         case '\\':
-        case '/':
             result += "\\";
             result += *input;
             break;
